@@ -1,0 +1,247 @@
+@font-face {
+  font-family: "Averta Demo PE Cutted Demo";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  src: url(/themes/myproject/fonts/averto/Averto.ttf);
+}
+
+.card-content {
+  max-width: 100%;
+  height: 392px;
+  border: 1px solid #ccc;
+  border-radius: 9px;
+  margin: 0 12px 0 12px;
+  overflow: hidden;
+}
+
+.card-content__image img {
+  width: 100%;
+  height: 185px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card-content__image img {
+    height: 130px;
+  }
+}
+
+.card-content--fallback-items {
+  width: 100%;
+  height: 185px;
+  text-align: center;
+}
+
+.card-content--fallback-items-img {
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-content--fallback-items-text {
+  font-family: "Averta Demo PE Cutted Demo";
+  font-size: 18px;
+}
+
+.card-content__body {
+  font-size: 18px;
+  margin: 18px 0 18px 21px;
+  font-family: "Averta Demo PE Cutted Demo";
+}
+
+@media (min-width: 1025px) {
+  .card-content__body {
+    max-width: 200px;
+  }
+}
+
+.card-content__calendar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 21px;
+  font-family: "Averta Demo PE Cutted Demo";
+}
+
+.card-content__calendar--date-field {
+  padding-left: 20px;
+}
+
+.card-content__leadership {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 12px 21px;
+}
+
+.card-content__leadership--text {
+  padding-left: 20px;
+  font-family: "Averta Demo PE Cutted Demo";
+}
+
+.card-content__location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 12px 0 0 21px;
+}
+
+.card-content__location--icon img {
+  width: 16px;
+  height: 16px;
+}
+
+.card-content__location--text {
+  padding-left: 21px;
+  font-family: "Averta Demo PE Cutted Demo";
+}
+
+.card-content .card-bottom {
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card-content .card-bottom__favourite-icon, .card-content .card-bottom__download-icon, .card-content .card-bottom__share {
+    padding-right: 25px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .card-content .card-bottom__favourite-icon, .card-content .card-bottom__download-icon, .card-content .card-bottom__share {
+    padding-right: 35px;
+  }
+}
+
+.card-content .card-bottom__favourite-icon:hover, .card-content .card-bottom__download-icon:hover, .card-content .card-bottom__share:hover {
+  color: #017fd5;
+}
+
+.card-content .card-bottom__link a {
+  font-size: 12px;
+  font-family: "Averta Demo PE Cutted Demo";
+  font-weight: 600;
+  color: #017fd5;
+  text-decoration: none;
+  padding-left: 35px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card-content .card-bottom__link a {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .card-content .card-bottom__link a {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card-content .card-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    opacity: 1;
+    margin: 23px 23px 19px 19px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .card-content .card-bottom {
+    opacity: 0;
+    height: 0;
+    margin: 24px 26px 21px 21px;
+  }
+}
+
+.card-content hr {
+  opacity: 1;
+}
+
+@media (min-width: 1025px) {
+  .card-content hr {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card-content {
+    height: 340px;
+    margin-right: 12px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .card-content {
+    height: 357px;
+    margin: 0 50px 0 0;
+  }
+}
+
+.featured-wrapper {
+  position: absolute;
+}
+
+.featured-wrapper--star-img {
+  position: relative;
+  top: -41px;
+  left: 8px;
+}
+
+.card-content:hover {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 1025px) {
+  .card-content:hover hr {
+    opacity: 1;
+  }
+}
+
+.card-content:hover .card-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 1025px) {
+  .card-content:hover .card-bottom {
+    opacity: 1;
+    height: auto;
+    -webkit-transition: opacity 1s ease-out;
+    transition: opacity 1s ease-out;
+  }
+}
+
+@media (min-width: 1025px) {
+  .card-content:hover .card-content__image img {
+    height: 120px;
+    -webkit-transition: height 0.15s;
+    transition: height 0.15s;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card-content:hover .card-content--fallback-item-wrapper {
+    height: 130px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .card-content:hover .card-content--fallback-item-wrapper {
+    height: 120px;
+  }
+}
+/*# sourceMappingURL=../../maps/molecules/card-component.css.map */

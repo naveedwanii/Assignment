@@ -1,0 +1,47 @@
+@import '../config.all';
+.cards-view-container {
+  .slick-prev {
+    @include breakpoint($desktop) {
+      @include slick-left-arrow();
+      position: relative;
+      top: 10rem;
+      left: -53px;
+    }
+  }
+  .slick-prev:hover {
+    background: url('.../../../../../images/left-arrow-hover.svg');
+  }
+  .slick-next {
+    @include breakpoint($desktop) {
+      @include slick-right-arrow();
+      position: relative;
+      top: 10rem;
+      left: 12px;
+    }
+  }
+  .slick-next:hover {
+    background: url('.../../../../../images/right-arrow-hover.svg');
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    li {
+      font-size: 42px;
+      width: 16px;
+      color: $blue-arrow;
+
+      button {
+        display: none;
+      }
+    }
+  }
+  @include breakpoint($tablet) {
+    margin-left: 12px;
+  }
+  @include breakpoint($desktop) {
+    position: relative;
+    left: 23px;
+    display: flex;
+    margin: 0 80px 0 80px;
+  }
+}

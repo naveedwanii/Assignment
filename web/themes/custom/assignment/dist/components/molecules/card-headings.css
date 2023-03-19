@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Averta Demo PE Cutted Demo";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  src: url(/themes/myproject/fonts/averto/Averto.ttf);
+}
+
+.card-heading {
+  margin-bottom: 30px;
+}
+
+.card-heading--heading {
+  text-align: center;
+  font-family: "Averta Demo PE Cutted Demo";
+  font-size: 36px;
+  font-weight: 400;
+  color: #495057;
+}
+
+.card-heading--subheading {
+  text-align: center;
+  color: #7c8993;
+  font-family: "Averta Demo PE Cutted Demo";
+  font-size: 18px;
+}
+
+.card-heading--subheading p {
+  margin-top: 5px;
+}
+
+@media (min-width: 1025px) {
+  .card-heading {
+    margin-bottom: 75px;
+  }
+}
+/*# sourceMappingURL=../../maps/molecules/card-headings.css.map */

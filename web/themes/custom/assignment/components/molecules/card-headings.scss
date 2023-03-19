@@ -1,0 +1,23 @@
+@import '../config.all';
+.card-heading {
+  margin-bottom: 30px;
+  &--heading {
+    text-align: center;
+    font-family: $font-primary;
+    font-size: 36px;
+    font-weight: 400;
+    color: $black-color;
+  }
+  &--subheading {
+    text-align: center;
+    color: $light-grey;
+    font-family: $font-primary;
+    font-size: 18px;
+    p {
+      margin-top: 5px;
+    }
+  }
+  @include breakpoint($desktop) {
+    margin-bottom: 75px;
+  }
+}

@@ -1,0 +1,175 @@
+@import '../config.all';
+.card-content {
+  max-width: 100%;
+  height: 392px;
+  border: 1px solid $grey;
+  border-radius: 9px;
+  margin: 0 12px 0 12px;
+  overflow: hidden;
+  &__image {
+    img {
+      width: 100%;
+      height: 185px;
+      @include breakpoint($tablet) {
+        height: 130px;
+      }
+    }
+  }
+  &--fallback-items {
+    width: 100%;
+    height: 185px;
+    text-align: center;
+    &-img {
+      width: 30px;
+      height: 30px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &-text {
+      font-family: $font-primary;
+      font-size: 18px;
+    }
+  }
+  &__body {
+    font-size: 18px;
+    margin: 18px 0 18px 21px;
+    font-family: $font-primary;
+    @include breakpoint($desktop) {
+      max-width: 200px;
+    }
+  }
+  &__calendar {
+    display: flex;
+    margin-left: 21px;
+    font-family: $font-primary;
+    &--date-field {
+      padding-left: 20px;
+    }
+  }
+  &__leadership {
+    display: flex;
+    margin: 0 0 12px 21px;
+    &--text {
+      padding-left: 20px;
+      font-family: $font-primary;
+    }
+  }
+  &__location {
+    display: flex;
+    margin: 12px 0 0 21px;
+    &--icon {
+      img {
+        width: 16px;
+        height: 16px;
+      }
+    }
+    &--text {
+      padding-left: 21px;
+      font-family: $font-primary;
+    }
+  }
+  .card-bottom {
+    opacity: 1;
+    display: flex;
+    justify-content: space-around;
+    &__favourite-icon,
+    &__download-icon,
+    &__share {
+      @include breakpoint($tablet) {
+        padding-right: 25px;
+      }
+      @include breakpoint($desktop) {
+        padding-right: 35px;
+      }
+    }
+    &__favourite-icon:hover,
+    &__download-icon:hover,
+    &__share:hover {
+      color: $blue-heading;
+    }
+
+    &__link a {
+      font-size: 12px;
+      font-family: $font-primary;
+      font-weight: 600;
+      color: $blue-heading;
+      text-decoration: none;
+      padding-left: 35px;
+
+      @include breakpoint($tablet) {
+        font-size: 16px;
+      }
+
+      @include breakpoint($desktop) {
+        font-size: 18px;
+      }
+    }
+    @include breakpoint($tablet) {
+      display: flex;
+      justify-content: space-around;
+      opacity: 1;
+      margin: 23px 23px 19px 19px;
+    }
+    @include breakpoint($desktop) {
+      opacity: 0;
+      height: 0;
+      margin: 24px 26px 21px 21px;
+    }
+  }
+
+  hr {
+    opacity: 1;
+    @include breakpoint($desktop) {
+      opacity: 0;
+    }
+  }
+
+  @include breakpoint($tablet) {
+    height: 340px;
+    margin-right: 12px;
+  }
+  @include breakpoint($desktop) {
+    height: 357px;
+    margin: 0 50px 0 0;
+  }
+}
+.featured-wrapper {
+  position: absolute;
+  &--star-img {
+    position: relative;
+    top: -41px;
+    left: 8px;
+  }
+}
+.card-content:hover {
+  hr {
+    @include breakpoint($desktop) {
+      opacity: 1;
+    }
+  }
+  .card-bottom {
+    display: flex;
+    @include breakpoint($desktop) {
+      opacity: 1;
+      height: auto;
+      transition: opacity 1s ease-out;
+    }
+  }
+  .card-content__image {
+    img {
+      @include breakpoint($desktop) {
+        height: 120px;
+        transition: height 0.15s;
+      }
+    }
+  }
+  .card-content--fallback-item-wrapper {
+    @include breakpoint($tablet) {
+      height: 130px;
+    }
+    @include breakpoint($desktop) {
+      height: 120px;
+    }
+  }
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

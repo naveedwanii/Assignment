@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Averta Demo PE Cutted Demo";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  src: url(/themes/myproject/fonts/averto/Averto.ttf);
+}
+
+@media (min-width: 1025px) {
+  .cards-view-container .slick-prev {
+    background: #ffffff url(".../../../../../images/left-arrow.svg") no-repeat;
+    width: 30px;
+    height: 30px;
+    border: none;
+    text-indent: -9999px;
+    position: relative;
+    top: 10rem;
+    left: -53px;
+  }
+}
+
+.cards-view-container .slick-prev:hover {
+  background: url(".../../../../../images/left-arrow-hover.svg");
+}
+
+@media (min-width: 1025px) {
+  .cards-view-container .slick-next {
+    background: #ffffff url(".../../../../../images/right-arrow.svg") no-repeat;
+    width: 30px;
+    height: 30px;
+    border: none;
+    text-indent: -9999px;
+    position: relative;
+    top: 10rem;
+    left: 12px;
+  }
+}
+
+.cards-view-container .slick-next:hover {
+  background: url(".../../../../../images/right-arrow-hover.svg");
+}
+
+.cards-view-container .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cards-view-container .slick-dots li {
+  font-size: 42px;
+  width: 16px;
+  color: #0b80ce;
+}
+
+.cards-view-container .slick-dots li button {
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cards-view-container {
+    margin-left: 12px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .cards-view-container {
+    position: relative;
+    left: 23px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 80px 0 80px;
+  }
+}
+/*# sourceMappingURL=../../maps/04-organisms/card-wrapper.css.map */

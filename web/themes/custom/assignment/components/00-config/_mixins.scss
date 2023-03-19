@@ -1,0 +1,25 @@
+@mixin line-clamp($linesToClamp: 2) {
+  display: -webkit-box;
+  -webkit-line-clamp: $linesToClamp;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@mixin slick-left-arrow() {
+  background: $color-white url('.../../../../../images/left-arrow.svg')
+    no-repeat;
+  width: 30px;
+  height: 30px;
+  border: none;
+  text-indent: -9999px;
+}
+
+@mixin slick-right-arrow() {
+  background: $color-white url('.../../../../../images/right-arrow.svg')
+    no-repeat;
+  width: 30px;
+  height: 30px;
+  border: none;
+  text-indent: -9999px;
+}

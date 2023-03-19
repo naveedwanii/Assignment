@@ -1,0 +1,45 @@
+@import '../config.all';
+.tabsbar .quicktabs-main {
+  padding: 0;
+}
+.tabsbar ul.quicktabs-tabs {
+  margin: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  border-bottom: 2px solid $blue-heading;
+  @include breakpoint($desktop) {
+    margin: 20px 107px 20px 107px;
+  }
+}
+.quicktabs-wrapper {
+  padding-bottom: 0px;
+  .quicktabs-tabs {
+    justify-content: space-around;
+    margin: 0 70px 0 70px;
+    li,
+    a {
+      white-space: unset;
+      text-decoration: none;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 600;
+      font-family: $font-primary;
+      color: $blue-heading;
+      padding-bottom: 5px;
+
+      @include breakpoint($tablet) {
+        font-size: 16px;
+      }
+
+      @include breakpoint($desktop) {
+        font-size: 18px;
+      }
+    }
+    a:active {
+      @include breakpoint($desktop) {
+        font-size: 26px;
+        transition: height 0.15s;
+      }
+    }
+  }
+}

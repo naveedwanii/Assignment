@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Averta Demo PE Cutted Demo";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  src: url(/themes/myproject/fonts/averto/Averto.ttf);
+}
+
+.tabsbar .quicktabs-main {
+  padding: 0;
+}
+
+.tabsbar ul.quicktabs-tabs {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  border-bottom: 2px solid #017fd5;
+}
+
+@media (min-width: 1025px) {
+  .tabsbar ul.quicktabs-tabs {
+    margin: 20px 107px 20px 107px;
+  }
+}
+
+.quicktabs-wrapper {
+  padding-bottom: 0px;
+}
+
+.quicktabs-wrapper .quicktabs-tabs {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 70px 0 70px;
+}
+
+.quicktabs-wrapper .quicktabs-tabs li,
+.quicktabs-wrapper .quicktabs-tabs a {
+  white-space: unset;
+  text-decoration: none;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Averta Demo PE Cutted Demo";
+  color: #017fd5;
+  padding-bottom: 5px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .quicktabs-wrapper .quicktabs-tabs li,
+.quicktabs-wrapper .quicktabs-tabs a {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .quicktabs-wrapper .quicktabs-tabs li,
+.quicktabs-wrapper .quicktabs-tabs a {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .quicktabs-wrapper .quicktabs-tabs a:active {
+    font-size: 26px;
+    -webkit-transition: height 0.15s;
+    transition: height 0.15s;
+  }
+}
+/*# sourceMappingURL=../../maps/molecules/quick-tabs.css.map */
