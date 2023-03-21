@@ -69,52 +69,52 @@
  */
 #}
 
-{{ attach_library('myproject/card-component')}}
+{{ attach_library('assignment/card-component')}}
 <article{{ attributes }}>
 <div class='card-content'>
 {% if node.field_featured_conferences.value %}
    <span class='featured-wrapper'>
-      <img src='/themes/myproject/images/triangle.svg' alt='tag-icon' class='featured-wrapper--triangle-img'/>
-      <img src='/themes/myproject/images/star.svg' alt='calendar-icon' class='featured-wrapper--star-img'/>
+      <img src='/themes/custom/assignment/images/triangle.svg' alt='tag-icon' class='featured-wrapper--triangle-img'/>
+      <img src='/themes/custom/assignment/images/star.svg' alt='calendar-icon' class='featured-wrapper--star-img'/>
    </span>
 {% endif %}
 {% if node.field_card_image.value %}
   <div class='card-content__image'>{{ content.field_card_image }}</div>
 {% else %}
   <div class='card-content--fallback-items'>
-   <img src='/themes/myproject/images/tags.svg' alt='tag-icon' class='card-content--fallback-items-img'/>
+   <img src='/themes/custom/assignment/images/tags.svg' alt='tag-icon' class='card-content--fallback-items-img'/>
    <span class='card-content--fallback-items-text'>Conferences Slide Image 002</span>
   </div>
 {% endif %}
   <div class='card-content__body'>{{ content.body.0['#text']|striptags }}</div>
   <div class='card-content__leadership'>
      <span class='card-content__leadership--icon'>
-       <img src='/themes/myproject/images/tags.svg' alt='tag-icon'/>
+       <img src='/themes/custom/assignment/images/tags.svg' alt='tag-icon'/>
      </span>
      <span class='card-content__leadership--text'>{{ content.field_card_management.0['#context'].value }}</span>
   </div>
   <div class='card-content__calendar'>
     <span class='card-content__calendar--icon'>
-      <img src='/themes/myproject/images/calender-icon.svg' alt='calendar-icon'/>
+      <img src='/themes/custom/assignment/images/calender-icon.svg' alt='calendar-icon'/>
     </span>
     <span class='card-content__calendar--date-field'>{{ content.field_date.value|date("d M Y") }}</span>
   </div>
   <div class='card-content__location'>
     <span class='card-content__location--icon'>
-      <img src='/themes/myproject/images/location-icon.svg' alt='location-icon'/>
+      <img src='/themes/custom/assignment/images/location-icon.svg' alt='location-icon'/>
     </span>
     <span class='card-content__location--text'>{{ content.field_card_location.0['#context'].value}}</span>
   </div>
 <hr />
   <div class='card-bottom'>
     <span class='card-bottom__favourite-icon'>
-     <a href='#'><img src='/themes/myproject/images/favourite.svg' alt='favourite-icon'/></a>
+     <a href='#'><img src='/themes/custom/assignment/images/favourite.svg' alt='favourite-icon'/></a>
     </span>
     <span class='card-bottom__download-icon'>
-      <a href='#'><img src='/themes/myproject/images/download.svg' alt='download-icon' /></a>
+      <a href='#'><img src='/themes/custom/assignment/images/download.svg' alt='download-icon' /></a>
     </span>
     <span class='card-bottom__share-icon'>
-      <a href='#'><img src='/themes/myproject/images/share.svg' alt='share-icon' /></a>
+      <a href='#'><img src='/themes/custom/assignment/images/share.svg' alt='share-icon' /></a>
     </span>
     <span class='card-bottom__link'>
       <a href='#'>View More</a>
